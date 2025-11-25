@@ -1,65 +1,60 @@
-❤️ Heart Attack Prediction using Machine Learning
-
-A Machine Learning project to predict the likelihood of a heart attack based on medical parameters.
-
+❤️ Heart Attack Prediction Using Machine Learning
 📌 Project Overview
 
-Heart disease is one of the leading causes of death globally. Early detection can save lives by enabling quick medical action.
-This project uses machine learning classification models to predict the risk of a heart attack based on various health indicators.
+This project applies machine learning techniques to predict the likelihood of a heart attack using patient medical data. The goal is to analyze key health indicators, understand risk patterns, and build a reliable classification model that can assist early medical diagnosis. The project covers the full ML workflow—from data cleaning and EDA to model training, evaluation, and comparison.
 
-The goal of this project is to:
+📊 Dataset Description
 
-Analyze patient medical data
+The dataset contains cardiovascular-related medical attributes commonly used in clinical diagnosis:
 
-Build predictive models
+Age, Sex
 
-Evaluate performance
+Chest Pain Type (cp)
 
-Provide actionable insights from the data
+Resting Blood Pressure (trtbps)
 
-📂 Dataset
+Cholesterol (chol)
 
-The dataset contains medical attributes commonly used in cardiovascular analysis:
+Fasting Blood Sugar (fbs)
 
-Feature	Description
-age	Age of the patient
-sex	Gender (1 = male, 0 = female)
-cp	Chest pain type
-trtbps	Resting blood pressure
-chol	Cholesterol level
-fbs	Fasting blood sugar
-restecg	Resting electrocardiographic results
-thalachh	Maximum heart rate achieved
-exng	Exercise-induced angina
-oldpeak	ST depression induced by exercise
-slp	Slope of peak exercise ST segment
-caa	Number of major vessels colored
-thall	Thalassemia
-output	Target variable (1 = high risk, 0 = low risk)
+Resting ECG (restecg)
+
+Maximum Heart Rate (thalachh)
+
+Exercise-Induced Angina (exng)
+
+ST Depression (oldpeak)
+
+Slope (slp)
+
+Number of Major Vessels (caa)
+
+Thalassemia (thall)
+
+Output (1 = heart attack risk, 0 = no risk)
+
+These features help determine the presence or likelihood of cardiovascular disease.
+
 🔍 Project Workflow
 1️⃣ Data Preprocessing
 
-Handling missing values
+Handled missing values
 
-Outlier detection
+Encoded categorical variables
 
-Encoding categorical features
+Scaled numerical features
 
-Feature scaling
+Removed inconsistencies and outliers
 
 2️⃣ Exploratory Data Analysis (EDA)
 
-Heatmaps
+Visualized distributions, correlations, and key patterns
 
-Correlation matrix
+Identified important predictors such as age, cholesterol, and exercise-induced angina
 
-Distribution plots
+3️⃣ Model Development
 
-Risk patterns & insights
-
-3️⃣ Model Training
-
-Models evaluated:
+Multiple machine learning models were trained and tested, including:
 
 Logistic Regression
 
@@ -67,36 +62,32 @@ Random Forest
 
 Decision Tree
 
-SVM
-
 KNN
+
+Support Vector Machine
 
 4️⃣ Model Evaluation
 
-Metrics:
+Models were evaluated using:
 
 Accuracy
 
-Precision, Recall, F1 Score
+Precision, Recall, F1-score
 
 Confusion Matrix
 
-ROC–AUC score
+ROC–AUC Curve
 
-5️⃣ Results
+The best-performing model achieved strong accuracy and balanced performance across metrics.
 
-✔ Best model: Random Forest (e.g., ~89% accuracy)
-✔ Strong predictive performance on key medical indicators
-✔ Good balance of precision & recall
+🧠 Technologies Used
 
-📊 Visualizations Included
+Python
 
-You can add graphs such as:
+Pandas, NumPy
 
-Age distribution
+Matplotlib, Seaborn
 
-Cholesterol vs. Heart Attack Risk
+Scikit-learn
 
-Correlation heatmap
-
-Model performance comparison
+Jupyter Notebook
