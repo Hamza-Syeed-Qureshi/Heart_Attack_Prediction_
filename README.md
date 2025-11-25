@@ -73,8 +73,4 @@ The best-performing model showed strong and balanced performance across all metr
 
 ---
 
-## 🚀 How to Run the Project
 
-### Install Dependencies
-```bash
-pip install -r requirements.txt
