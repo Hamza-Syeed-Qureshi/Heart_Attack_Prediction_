@@ -1,93 +1,80 @@
-❤️ Heart Attack Prediction Using Machine Learning
-📌 Project Overview
+# ❤️ Heart Attack Prediction Using Machine Learning
 
-This project applies machine learning techniques to predict the likelihood of a heart attack using patient medical data. The goal is to analyze key health indicators, understand risk patterns, and build a reliable classification model that can assist early medical diagnosis. The project covers the full ML workflow—from data cleaning and EDA to model training, evaluation, and comparison.
+## 📌 Project Overview
+This project uses machine learning techniques to predict the likelihood of a heart attack based on key medical features. It covers the complete ML workflow including data preprocessing, exploratory data analysis (EDA), feature engineering, model training, and evaluation. The goal is to build a reliable model that can help in early detection and medical decision support.
 
-📊 Dataset Description
+---
 
-The dataset contains cardiovascular-related medical attributes commonly used in clinical diagnosis:
+## 📊 Dataset Description
+The dataset contains essential cardiovascular health indicators:
 
-Age, Sex
+- **Age**
+- **Sex**
+- **Chest Pain Type (cp)**
+- **Resting Blood Pressure (trtbps)**
+- **Cholesterol (chol)**
+- **Fasting Blood Sugar (fbs)**
+- **Resting ECG (restecg)**
+- **Maximum Heart Rate (thalachh)**
+- **Exercise-Induced Angina (exng)**
+- **ST Depression (oldpeak)**
+- **Slope (slp)**
+- **Number of Major Vessels (caa)**
+- **Thalassemia (thall)**
+- **Output (1 = heart attack risk, 0 = low risk)**
 
-Chest Pain Type (cp)
+These features help identify patterns and risk levels associated with cardiovascular disease.
 
-Resting Blood Pressure (trtbps)
+---
 
-Cholesterol (chol)
+## 🔍 Project Workflow
 
-Fasting Blood Sugar (fbs)
+### 1️⃣ Data Preprocessing
+- Handling missing values  
+- Encoding categorical features  
+- Scaling numerical variables  
+- Outlier detection and removal  
 
-Resting ECG (restecg)
+### 2️⃣ Exploratory Data Analysis (EDA)
+- Correlation heatmap  
+- Feature distributions  
+- Risk pattern analysis  
+- Identifying top contributing factors  
 
-Maximum Heart Rate (thalachh)
+### 3️⃣ Model Development
+The following machine learning models were trained and compared:
 
-Exercise-Induced Angina (exng)
+- Logistic Regression  
+- Decision Tree  
+- Random Forest  
+- K-Nearest Neighbors (KNN)  
+- Support Vector Machine (SVM)  
 
-ST Depression (oldpeak)
-
-Slope (slp)
-
-Number of Major Vessels (caa)
-
-Thalassemia (thall)
-
-Output (1 = heart attack risk, 0 = no risk)
-
-These features help determine the presence or likelihood of cardiovascular disease.
-
-🔍 Project Workflow
-1️⃣ Data Preprocessing
-
-Handled missing values
-
-Encoded categorical variables
-
-Scaled numerical features
-
-Removed inconsistencies and outliers
-
-2️⃣ Exploratory Data Analysis (EDA)
-
-Visualized distributions, correlations, and key patterns
-
-Identified important predictors such as age, cholesterol, and exercise-induced angina
-
-3️⃣ Model Development
-
-Multiple machine learning models were trained and tested, including:
-
-Logistic Regression
-
-Random Forest
-
-Decision Tree
-
-KNN
-
-Support Vector Machine
-
-4️⃣ Model Evaluation
-
+### 4️⃣ Model Evaluation
 Models were evaluated using:
 
-Accuracy
+- **Accuracy**
+- **Precision, Recall, F1-score**
+- **Confusion Matrix**
+- **ROC–AUC Curve**
 
-Precision, Recall, F1-score
+The best-performing model showed strong and balanced performance across all metrics.
 
-Confusion Matrix
+---
 
-ROC–AUC Curve
+## 🧠 Technologies Used
+- Python  
+- Pandas  
+- NumPy  
+- Scikit-Learn  
+- Matplotlib  
+- Seaborn  
+- Jupyter Notebook  
 
-The best-performing model achieved strong accuracy and balanced performance across metrics.
+---
 
-🧠 Technologies Used
+## 🚀 How to Run the Project
 
-Python
-
-Pandas, NumPy
-
-Matplotlib, Seaborn
-
-Scikit-learn
-
-Jupyter Notebook
+### Install Dependencies
+```bash
+pip install -r requirements.txt
